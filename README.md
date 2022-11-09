@@ -1,6 +1,6 @@
 # Fine-Grained Controllable Emotion Text Generation through Prompt Tuning
 ## Description
-Performs prompt tuning on corpora extracted from the GoEmotions dataset, to train soft prompts usable for Controllable Text Generation for various emotions.
+Performs prompt tuning on corpora extracted from the GoEmotions dataset, to train soft prompts usable for Controllable Text Generation for various emotions. In other words, we provide an approach to guide a language AI model towards generating text of a certain emotionality. 
 
 Soft prompts have the benefit of being very light-weight when it comes to inference cost and store space, and GoEmotions provides a wide variety of emotions to train on.
 
@@ -12,7 +12,7 @@ The first notebook isnt required, the corpora folder contains the dataset alredy
 See Structure section for where to find everything. 
 
 ## Limitations
-The GoEmotions dataset has flaws for this purpose. It being composed of social media comment adds bias to soft prompts that make inpractical for other contexts than generating social media comments. 
+The GoEmotions dataset has flaws for this purpose. It being composed of social media comment adds bias to soft prompts that limits its consistency in other contexts than generating social media comments. For example, the use of "lol", emojis and grammatical consistency. 
 
 Soft prompts have limited controllability; a lack of an emotion intensity parameter. The CTG field moves fast, new approaches get developed quickly, many of them could be considered.
 
