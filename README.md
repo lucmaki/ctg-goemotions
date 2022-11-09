@@ -34,4 +34,4 @@ Soft prompts have limited controllability; a lack of an emotion intensity parame
 
 **prompt_tuning/** : Contains the jupyter notebook (and requirements) for the prompt tuning and inference process.
 
-**survey/** : Contains the survey's text snippets, and the notebook (and requirements) for Prolific answer analysis.
+**survey/** : Contains the survey's text snippets, and the notebook (and requirements) for Prolific answer analysis. Note, the answers to perform the analysis are not included here.
