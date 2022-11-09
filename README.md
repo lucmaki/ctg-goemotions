@@ -5,7 +5,7 @@ Performs prompt tuning on corpora extracted from the GoEmotions dataset, to trai
 Soft prompts have the benefit of being very light-weight when it comes to inference cost and store space, and GoEmotions provides a wide variety of emotions to train on.
 
 ## How to Use
-2 jupyter notebooks are available: one to preprocess the GoEmotions dataset, and one to perform train and use the soft prompts. 
+2 jupyter notebooks are available: one to preprocess the GoEmotions dataset, and one to train and use the soft prompts.
 
 The first notebook isnt required, the corpora folder contains the dataset alredy preprocessed for certain emotions.
 
