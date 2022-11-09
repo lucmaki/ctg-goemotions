@@ -4,12 +4,21 @@ Performs prompt tuning on corpora extracted from the GoEmotions dataset, to trai
 
 Soft prompts have the benefit of being very light-weight when it comes to inference cost and store space, and GoEmotions provides a wide variety of emotions to train on.
 
+### Evaluation
+A human survey was performed to evaluate the performance of trained soft prompts, for **emotional consistency** and **grammatical correctness**. Statistical tests are then performed. We include here only the aggregate results: 
+
+For **emotional consistency**, 4 out of 6 emotion soft prompts passed the Chi-square tests of independence and the increase in average accuracy over all soft prompts is **+164.925%** when compared to the baseline model. 
+
+For **grammatical correctness**, 5 out of 6 passed the Student's t-tests with an average accuracy decrease of **-12.947%** against the base model.
+
+Each soft prompt takes up **67 KB** of disk storage and **20 tokens** in the PLM's context.
+
 ## How to Use
-2 jupyter notebooks are available: one to preprocess the GoEmotions dataset, and one to train and use the soft prompts.
+3 jupyter notebooks are available: to preprocess the GoEmotions dataset, to train and use the soft prompts, and the notebook used for survey evaluation.
 
-The first notebook isnt required, the corpora folder contains the dataset alredy preprocessed for certain emotions.
+The dataset pre-processing notebook isnt required, the corpora folder contains the dataset alredy preprocessed for certain emotions. The survey evaluation notebook is there for posterity but the survey answers themselves are not included.
 
-See Structure section for where to find everything. 
+See **Structure** section for where to find everything. 
 
 ## Limitations
 The GoEmotions dataset has flaws for this purpose. It being composed of social media comment adds bias to soft prompts that limits its consistency in other contexts than generating social media comments. For example, the use of "lol", emojis and grammatical consistency. 
@@ -24,3 +33,5 @@ Soft prompts have limited controllability; a lack of an emotion intensity parame
 **preprocess_dataset/corpora/** : Contains each prepared emotion corpus to use for prompt tuning.
 
 **prompt_tuning/** : Contains the jupyter notebook (and requirements) for the prompt tuning and inference process.
+
+**survey/** : Contains the survey's text snippets, and the notebook (and requirements) for Prolific answer analysis.
