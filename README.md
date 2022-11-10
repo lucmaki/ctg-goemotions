@@ -21,7 +21,7 @@ The dataset pre-processing notebook isnt required, the corpora folder contains t
 See **Structure** section for where to find everything. 
 
 ## Limitations
-The GoEmotions dataset has flaws for this purpose. It being composed of social media comment adds bias to soft prompts that limits its consistency in other contexts than generating social media comments. For example, the use of "lol", emojis and grammatical consistency. 
+The GoEmotions dataset has flaws for this purpose. It being composed of social media comment adds bias to soft prompts that limits its consistency in other contexts than generating social media comments. For example, the prevalance of slang like "lol", emojis and lowered grammatical correctness. 
 
 Soft prompts have limited controllability; a lack of an emotion intensity parameter. The CTG field moves fast, new approaches get developed quickly, many of them could be considered.
 
