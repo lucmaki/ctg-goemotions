@@ -7,9 +7,9 @@ Soft prompts have the benefit of being very light-weight when it comes to infere
 ### Evaluation
 A human survey was performed to evaluate the performance of trained soft prompts, for **emotional consistency** and **grammatical correctness**. Statistical tests are then performed. We include here only the aggregate results: 
 
-For **emotional consistency**, 4 out of 6 emotion soft prompts passed the Chi-square tests of independence and the increase in average accuracy over all soft prompts is **+164.925%** when compared to the baseline model. 
+For **emotional consistency**, 4 out of 6 emotion soft prompts passed the Chi-square tests of independence (w/ 95% CI) and the increase in average accuracy over all soft prompts is **+164.925%** when compared to the baseline model. 
 
-For **grammatical correctness**, 5 out of 6 passed the Student's t-tests with an average accuracy decrease of **-12.947%** against the base model.
+For **grammatical correctness**, 5 out of 6 passed the Student's t-tests (w/ 95% CI) with an average accuracy decrease of **-12.947%** against the base model.
 
 Each soft prompt takes up **67 KB** of disk storage and **20 tokens** in the PLM's context.
 
