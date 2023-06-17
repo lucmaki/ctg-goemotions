@@ -7,9 +7,9 @@ Soft prompts have the benefit of being very light-weight when it comes to infere
 ### Evaluation
 A human survey was performed to evaluate the performance of trained soft prompts, for **emotional consistency** and **grammatical correctness**. Statistical tests are then performed. We include here only the aggregate results: 
 
-For **emotional consistency**, 4 out of 6 emotion soft prompts passed the Chi-square tests of independence (w/ 95% CI) and the increase in average accuracy over all soft prompts is **+164.925%** when compared to the baseline model. 
+For **emotional consistency**, 4 out of 6 emotion soft prompts rejected the null hypothesis for the Chi-square tests of independence (w/ 95% CI) and the increase in average accuracy over all soft prompts is **+164.925%** when compared to the baseline model. 
 
-For **grammatical correctness**, 5 out of 6 passed the Student's t-tests (w/ 95% CI) with an average accuracy decrease of **-12.947%** against the base model.
+For **grammatical correctness**, 5 out of 6 rejected the null hypothesis for the Student's t-tests (w/ 95% CI) with an average accuracy decrease of **-12.947%** against the base model.
 
 Each soft prompt takes up **67 KB** of disk storage and **20 tokens** in the PLM's context.
 
@@ -23,7 +23,7 @@ See **Structure** section for where to find everything.
 ## Limitations
 The GoEmotions dataset has flaws for this purpose. It being composed of social media comment adds bias to soft prompts that limits its consistency in other contexts than generating social media comments. For example, the prevalance of slang like "lol", emojis and lowered grammatical correctness. 
 
-Soft prompts have limited controllability; a lack of an emotion intensity parameter. The CTG field moves fast, new approaches get developed quickly, many of them could be considered.
+Soft prompts have limited controllability; a lack of an emotion intensity parameter. Given the CTG field moves fast, new approaches get developed quickly and many of them could be considered. For example, adapters.
 
 ## Structure
 **dataset/** : Contains the GoEmotions dataset, divided into 3 csv files.
