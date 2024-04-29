@@ -4,6 +4,8 @@ Performs prompt tuning on corpora extracted from the GoEmotions dataset, to trai
 
 Soft prompts have the benefit of being very light-weight when it comes to inference cost and store space, and GoEmotions provides a wide variety of emotions to train on.
 
+Please contact me for access to the full report.
+
 ### Evaluation
 A human survey was performed to evaluate the performance of trained soft prompts, for **emotional consistency** and **grammatical correctness**. Statistical tests are then performed. We include here only the aggregate results: 
 
